@@ -2,9 +2,8 @@ from dinosoar import Dinosoar
 
 class Herd:
 
-    dinosoars = []
-
     def __init__(self):
+        dinosoars = ['Tiny', 'Rex', 'Arlo']
         pass
 
     def create_herd(self):
