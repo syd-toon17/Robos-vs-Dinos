@@ -1,4 +1,3 @@
-# add logic to robot attack() then test it, then do dino and test it
 # test robo_oppo and see how it works and make one for dino_opp 
 
 from herd import Herd
@@ -12,6 +11,7 @@ class Battlefield:
 
     def run_game(self):
         self.fleet.robots[0].attack(self.herd.dinosoars[0])
+        self.herd.dinosoars[0].attack(self.fleet.robots[0])
         pass
     
     def display_welcome(self):
