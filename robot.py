@@ -6,5 +6,8 @@ class Robot:
         self.health = 100
         self.weapon = Weapon('Lazer Pistol', 15)
     # when we call this method on battlefield we will pass in a dino object that we want our robot to fight
-    def attack(self, dinosoar): # diosaur.health -= self.weapon.attack_power use print to inform the user 
+    
+    def attack(self, dinosoar):
+        self.dinosoar.health -= self.weapon_attack_power
+        print(f"{dinosoar} took an attack, {dinosoar}'s new health is {dinosoar.health}.")
         pass

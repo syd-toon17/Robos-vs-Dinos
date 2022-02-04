@@ -7,7 +7,12 @@ class Fleet:
         self.create_fleet()
     
     def create_fleet(self):
-        self.robots.append(robot_one = Robot('Baymax'))
-        self.robots.append(robot_two = Robot('WALL-E'))
-        self.robots.append(robot_three = Robot('Carl the Robot'))
+        robot_one = Robot('Baymax')
+        self.robots.append(robot_one)
+
+        robot_two = Robot('WALL-E')
+        self.robots.append(robot_two)
+        
+        robot_three = Robot('Carl the Robot')
+        self.robots.append(robot_three)
         pass

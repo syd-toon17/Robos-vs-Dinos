@@ -1,4 +1,3 @@
-# use fleet as an example for herd, after you have herd drop a break point on battlefield=Battlefield( ) in main and watch the game get assembled 
 # add logic to robot attack() then test it, then do dino and test it
 # test robo_oppo and see how it works and make one for dino_opp 
 
@@ -12,7 +11,7 @@ class Battlefield:
         self.herd = Herd()
 
     def run_game(self):
-        # self.fleet.robots[0].attack(self.herd.dinosoars[0])
+        self.fleet.robots[0].attack(self.herd.dinosoars[0])
         pass
     
     def display_welcome(self):

@@ -8,7 +8,12 @@ class Herd:
         pass
 
     def create_herd(self):
-        self.herd.append(dinosoar_one = Dinosoar('Tiny'))
-        self.herd.append(dinosoar_two = Dinosoar('Rex'))
-        self.herd.append(dinosoar_three = Dinosoar('Arlo'))
+        dino_one = Dinosoar('Tiny')
+        self.dinosoars.append(dino_one)
+
+        dino_two = Dinosoar('Rex')
+        self.dinosoars.append(dino_two)
+        
+        dino_three = Dinosoar('Arlo')
+        self.dinosoars.append(dino_three)
         pass
