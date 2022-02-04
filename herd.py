@@ -1,19 +1,19 @@
-from dinosoar import Dinosoar
+from dinosaur import Dinosaur
 
 class Herd:
 
     def __init__(self):
-        self.dinosoars = []
+        self.dinosaurs = []
         self.create_herd()
-        pass
+        
 
     def create_herd(self):
-        dino_one = Dinosoar('Tiny')
-        self.dinosoars.append(dino_one)
+        dino_one = Dinosaur('Tiny')
+        self.dinosaurs.append(dino_one)
 
-        dino_two = Dinosoar('Rex')
-        self.dinosoars.append(dino_two)
+        dino_two = Dinosaur('Rex')
+        self.dinosaurs.append(dino_two)
         
-        dino_three = Dinosoar('Arlo')
-        self.dinosoars.append(dino_three)
-        pass
+        dino_three = Dinosaur('Arlo')
+        self.dinosaurs.append(dino_three)
+        
