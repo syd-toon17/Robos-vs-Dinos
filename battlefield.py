@@ -1,5 +1,3 @@
-# test robo_oppo and see how it works and make one for dino_opp 
-
 from herd import Herd
 from fleet import Fleet
 
@@ -65,3 +63,6 @@ class Battlefield:
     def display_winners(self): # logic will be if dino team list is at 0 then robots won, elif robot team list is at 0 then dino's won
         if len(self.fleet.robots) <= 0:
             print('AND THE WINNER IS ..........  THE DINOSAURS!!!')
+        elif len(self.herd.dinosaurs) <= 0:
+            print('AND THE WINNER IS ..........  THE ROBOTS!!!')
+            
