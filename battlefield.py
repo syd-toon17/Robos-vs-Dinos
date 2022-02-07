@@ -18,8 +18,10 @@ class Battlefield:
 
     def battle(self): 
         while (len(self.fleet.robots) > 0 and len(self.herd.dinosaurs) > 0):
-            self.robo_turn()
-            self.dino_turn()
+            if len(self.fleet.robots) > 0:
+                self.robo_turn()
+            if len(self.herd.dinosaurs) > 0:
+                self.dino_turn()
 
 
     def dino_turn(self):
@@ -60,7 +62,7 @@ class Battlefield:
             index += 1
         
 
-    def display_winners(self): # logic will be if dino team list is at 0 then robots won, elif robot team list is at 0 then dino's won
+    def display_winners(self):
         if len(self.fleet.robots) <= 0:
             print('AND THE WINNER IS ..........  THE DINOSAURS!!!')
         elif len(self.herd.dinosaurs) <= 0:
